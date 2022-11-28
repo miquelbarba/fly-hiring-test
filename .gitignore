@@ -25,11 +25,13 @@
 # Ignore uploaded files in development.
 /storage/*
 !/storage/.keep
-/tmp/storage/*
-!/tmp/storage/
-!/tmp/storage/.keep
-
-/public/assets
+.byebug_history
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+
+/.idea/*
+/spec/examples.txt
+/coverage/*
+coverage
+.DS_Store

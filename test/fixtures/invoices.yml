@@ -1,11 +1,30 @@
-# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-# This model initially had no columns defined. If you add columns to the
-# model remove the "{}" from the fixture names and add the columns immediately
-# below each fixture, per the syntax in the comments below
-#
-one: {}
-# column: value
-#
-two: {}
-# column: value
+invoice_pending:
+  stripe_customer_id: abc
+  due_date: 2021-05-01
+
+invoice_successful:
+  stripe_customer_id: def
+  stripe_id: xyz
+  stripe_sync_state: successful
+  due_date: 2021-06-01
+
+invoice_pending_max_retries:
+  stripe_customer_id: ghi
+  stripe_num_retries: 5
+  due_date: 2022-05-01
+
+invoice1:
+  stripe_customer_id: 123
+  stripe_sync_state: successful
+  due_date: 2022-06-01
+
+invoice2:
+  stripe_customer_id: 345
+  stripe_sync_state: successful
+  due_date: 2022-05-01
+
+invoice3:
+  stripe_customer_id: 678
+  stripe_sync_state: successful
+  due_date: 2022-07-01

@@ -1,0 +1,37 @@
+
+invoice_item_pending:
+  concept: Service Y
+  quantity: 2
+  amount_per_unit: 42.42
+  invoice: invoice_pending
+
+invoice_item_successful:
+  concept: Service X
+  quantity: 3
+  amount_per_unit: 3.5
+  stripe_id: abc
+  invoice: invoice_successful
+
+invoice_item_pending_max_retries:
+  concept: Service Z
+  quantity: 1
+  amount_per_unit: 1.2
+  invoice: invoice_pending_max_retries
+
+invoice_item1:
+  concept: Service
+  quantity: 2
+  amount_per_unit: 5
+  invoice: invoice1
+
+invoice_item2:
+  concept: Service
+  quantity: 3
+  amount_per_unit: 4
+  invoice: invoice2
+
+invoice_item3:
+  concept: Service
+  quantity: 9
+  amount_per_unit: 2.5
+  invoice: invoice3

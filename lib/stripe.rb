@@ -37,6 +37,11 @@ module Stripe
         @retrieve_params.pop if @retrieve_params.try(:length).to_i > len
       end
 
+      def clear!
+        @errors = []
+        @slow_times = []
+      end
+
       def create(params)
         check_error!
         check_slow!
@@ -80,10 +85,15 @@ module Stripe
 
     def initialize(params)
       @id = params[:id]
+      assign_attributes(params)
     end
 
     def id
       @id ||= SecureRandom.base36
+    end
+
+    def stripe_id
+      @stripe_id ||= SecureRandom.base36
     end
 
     private
@@ -111,6 +121,10 @@ module Stripe
 
     def id
       @id ||= SecureRandom.base36
+    end
+
+    def stripe_id
+      @stripe_id ||= SecureRandom.base36
     end
 
     private
